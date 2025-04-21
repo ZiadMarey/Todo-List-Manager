@@ -1,11 +1,14 @@
 import './header.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useMatch } from 'react-router-dom';
 
 function Header(){
     const location = useLocation();
 
     function Locate(){
-        if (location.pathname === "/add-update"){
+        const isUpdatePage = useMatch('/update/:id');
+        // if (location.pathname === "/add" || new RegExp('^/update/\\d+$').test(location.pathname) )
+        // this above if works too
+        if (location.pathname === "/add" || isUpdatePage  ){
             return <Link to='/' className='add-link'>Back To The List</Link>
         }
         else{
