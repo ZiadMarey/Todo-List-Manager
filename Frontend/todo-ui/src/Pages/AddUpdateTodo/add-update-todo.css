@@ -1,0 +1,158 @@
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bgimage-c{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../ComponentsLogin/burger.jpg") no-repeat center center/cover;
+    filter: blur(6px);
+    z-index: -1;
+}
+
+.wrapper-c{
+    z-index: 1;
+    top: -50px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    width: 20vw;
+    height: 60vh;
+    position: relative;
+}
+
+.login-box-c{
+    position: absolute;
+    height: 10%;
+    top: 0px;
+    right: -68px;
+    transform: translateX(-50%);
+    background-color: #efb11d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-box-c{
+    position: relative;
+    margin: 50px 0;
+    width: 300px;
+    left: 40px;
+    top: 50px;
+}
+
+.input-box-c input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.input-box-c label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #efb11d;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.input-box-c input:focus + label,
+.input-box-c input:valid + label {
+    top: -17px;
+    font-size: 12px;
+}
+
+.signin-button-c{
+    background-color: #efb11d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 51vh;
+    left: 7.2vw;
+    position: absolute;
+    
+}
+
+.signup-text-c{
+    margin-top: 20px;
+    
+    font-size: 15px;
+    color: #efb11d;
+    text-decoration: none;
+    
+}
+
+.completed-text{
+    color: #e43d12;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+}
+
+.filter-switch {
+    border: 2px solid #ffc000;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 240px;
+    overflow: hidden;
+    left: 17%;
+    top: 50px;
+  }
+  .filter-switch input {
+    display: none;
+  }
+  .filter-switch label {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .filter-switch .background {
+    position: absolute;
+    width: 49%;
+    height: 38px;
+    background-color: #ffc000;
+    top: 4px;
+    left: 4px;
+    border-radius: 30px;
+    transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #option2:checked ~ .background {
+    left: 50%;
+  }
+   
+  #option1:checked + label[for="option1"],
+  #option2:checked + label[for="option2"] {
+    color: #212121;
+    font-weight: bold;
+  }
+  #option1:not(:checked) + label[for="option1"],
+  #option2:not(:checked) + label[for="option2"] {
+    color: #7d7d7d;
+  }
+  
