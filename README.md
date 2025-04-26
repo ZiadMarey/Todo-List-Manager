@@ -4,7 +4,7 @@ A Todo List Management Website that supports CRUD operations with an appealing a
 The Website is developed for the purpose of learning and practicing Java Springboot as a Backend.
 
 ## Project Status
-Planning to add Login and Authentication features in the upcoming 2 days.
+Added Backend Authentication, will update the Frontend in the next days.
 
 # Technologies Used
 Frontend: **React**, with Libraries (Axios, React-Router and Bootstrap)
