@@ -69,18 +69,18 @@ function AddUpdateTodo(){
 
     function pageTitle(){
         if(id){
-            return <div className="login-box-c">Edit A Task</div>
+            return <div className="login-box-b">Edit A Task</div>
         } else{
-            return <div className="login-box-c">Add A Task</div>
+            return <div className="login-box-b">Add A Task</div>
         }
     }
     return(
         <div className="body1">
         <div className="bgimage-c"></div>
-        <div className="wrapper-c">
+        <div className="wrapper-b">
           {pageTitle()}
           <form /*onSubmit={handleLogin}*/>
-            <div className="input-box-c">
+            <div className="input-box-b">
               <input
                 type="text"
                 id="firstName"
@@ -92,7 +92,7 @@ function AddUpdateTodo(){
               {/* { errors.firstName && <div className='invalid-feedback'> {errors.firstName} </div>} */}
               <label>Task Title</label>
             </div>
-            <div className="input-box-c">
+            <div className="input-box-b">
               <input
                 type="text"
                 id="password"
@@ -116,7 +116,7 @@ function AddUpdateTodo(){
             </div>
             
             <button
-              className="signin-button-c"
+              className="signin-button-b"
               onClick={(e) => addOrUpdateTodo(e)}
             >
               Submit
