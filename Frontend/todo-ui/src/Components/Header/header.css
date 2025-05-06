@@ -26,17 +26,23 @@
 
 .link-container{
     display: flex;
-    width: 15vw;
+    width: 25vw;
     position: relative;
     bottom: 10%;
     margin: 0;
 }
 
-.add-link{
+.add-link, 
+.logout-link{
     font-size: 30px;
     color: #e43d12;
     font-family: cursive;
     font-style: italic;
     text-decoration: underline;
-    
+    /* text-wrap: nowrap; */
+}
+
+.logout-link{
+    position: relative;
+    left: 20%;
 }
