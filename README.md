@@ -4,7 +4,7 @@ A Todo List Management Website that supports CRUD operations with an appealing a
 The Website is developed for the purpose of learning and practicing Java Springboot as a Backend.
 
 ## Project Status
-Added Basic Authentication, will add JWT to the website in the next 2 days.
+Added JWT Authentication. The Website is fully functional and finished.
 
 # Technologies Used
 Frontend: **React**, with Libraries (Axios, React-Router and Bootstrap)
@@ -42,3 +42,9 @@ npm install bootstrap
 
 npm install axios
 ```
+
+## Loging in
+Loging in as admin for access to full control and overall website overview: <br />
+Username: `admin`     Password: `admin` <br />
+
+Otherwise you can register as a user using the registeration form.
