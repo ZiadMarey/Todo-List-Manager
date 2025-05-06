@@ -15,7 +15,6 @@ function Header(){
     function mainPageLink(){
         const isAuth = isUserLoggedIn();
         if(isAuth){
-            console.log("NotLoggedin")
             return <Link to='/todos' className='title'> Todo List Manager </Link>
         }
         else{
@@ -50,7 +49,7 @@ function Header(){
             }
         }
         else{
-            console.log("not logged in");
+            
             return(<></>)
         }
         
